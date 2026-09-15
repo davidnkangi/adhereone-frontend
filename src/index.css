@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+::selection {
+  background-color: #16233b;
+  color: #f5f6f2;
+}
+
+:focus-visible {
+  outline: 2px solid #16233b;
+  outline-offset: 2px;
+}
