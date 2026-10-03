@@ -28,7 +28,7 @@ export default function Login() {
     <div className="min-h-screen bg-ink flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="font-serif text-2xl text-paper">Adhere Intelligence</div>
+          <div className="font-serif text-2xl text-paper">AdhereOne</div>
           <div className="text-white/50 text-sm mt-1">Compliance workspace sign in</div>
         </div>
         <form onSubmit={handleSubmit} className="bg-paper px-8 py-8 rounded-sm">

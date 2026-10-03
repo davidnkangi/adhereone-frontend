@@ -1,4 +1,4 @@
-# Adhere Intelligence — Frontend (Phase 1)
+# AdhereOne — Frontend (Phase 1)
 
 React + Vite + Tailwind. Talks to the Django backend via JWT.
 

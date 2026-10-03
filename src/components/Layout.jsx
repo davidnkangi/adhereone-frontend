@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { to: "/assessments", label: "Assessments" },
   { to: "/assets", label: "Asset Inventory" },
   { to: "/evidence", label: "Evidence" },
+  { to: "/policies", label: "Policies" },
   { to: "/audit-packages", label: "Audit Packages" },
 ];
 
@@ -16,8 +17,10 @@ export default function Layout() {
     <div className="min-h-screen flex bg-paper text-ink">
       <aside className="w-64 shrink-0 bg-ink text-paper flex flex-col">
         <div className="px-6 py-6 border-b border-white/10">
-          <div className="font-serif text-xl leading-tight">Adhere</div>
-          <div className="font-serif text-xl leading-tight -mt-1">Intelligence</div>
+          <div className="font-serif text-xl leading-tight">AdhereOne</div>
+          <div className="text-[11px] tracking-wide text-white/50 mt-0.5">
+            Adhere Systems
+          </div>
         </div>
         <nav className="flex-1 px-3 py-4 space-y-1">
           {NAV_ITEMS.map((item) => (
