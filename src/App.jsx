@@ -9,6 +9,7 @@ import AssessmentDetail from "./pages/AssessmentDetail";
 import Assets from "./pages/Assets";
 import Evidence from "./pages/Evidence";
 import Policies from "./pages/Policies";
+import PolicyDetail from "./pages/PolicyDetail";
 import AuditPackages from "./pages/AuditPackages";
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="assets" element={<Assets />} />
           <Route path="evidence" element={<Evidence />} />
           <Route path="policies" element={<Policies />} />
+          <Route path="policies/:id" element={<PolicyDetail />} />
           <Route path="audit-packages" element={<AuditPackages />} />
         </Route>
       </Routes>

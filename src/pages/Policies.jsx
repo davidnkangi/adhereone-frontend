@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../api/client";
 
 export default function Policies() {
@@ -133,7 +134,11 @@ export default function Policies() {
         <tbody>
           {policies?.map((p) => (
             <tr key={p.id} className="border-b border-line hover:bg-white">
-              <td className="py-3 text-ink">{p.title}</td>
+              <td className="py-3">
+                <Link to={`/policies/${p.id}`} className="text-ink hover:underline">
+                  {p.title}
+                </Link>
+              </td>
               <td className="py-3 text-muted">{p.category || "—"}</td>
               <td className="py-3 text-muted capitalize">{p.status.replace("_", " ")}</td>
               <td className="py-3 text-muted">v{p.version}</td>
